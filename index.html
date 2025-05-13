@@ -290,16 +290,16 @@
     }
 
     /* Flexoki-based light background colors for 天干 */
-    .bg-甲 { background-color: #f4d3d1; }  /* #AF3029 (red) light */
+    .bg-甲 { background-color: #bfe8d9; }  /* #AF3029 (red) light */
     .bg-乙 { background-color: #e4eccb; }  /* #66800B (green) light */
-    .bg-丙 { background-color: #f4d3d1; }  /* #AF3029 (red) */
-    .bg-丁 { background-color: #f4d1e6; }  /* #A02F6F (pinkish purple) */
-    .bg-戊 { background-color: #f7ebc8; }  /* #AD8301 (earth yellow) */
-    .bg-己 { background-color: #f8dcbc; }  /* #BC5215 (orange) */
-    .bg-庚 { background-color: #cceae7; }  /* #24837B (teal) */
-    .bg-辛 { background-color: #cbdff5; }  /* #205EA6 (blue) */
-    .bg-壬 { background-color: #cceae7; }  /* #24837B (teal) */
-    .bg-癸 { background-color: #ddd4f4; }  /* #5E409D (violet) */
+    .bg-丙 { background-color: #ffcabb; }  /* #AF3029 (red) */
+    .bg-丁 { background-color: #fccfda; }  /* #A02F6F (pinkish purple) */
+    .bg-戊 { background-color: #f6e2a0; }  /* #AD8301 (earth yellow) */
+    .bg-己 { background-color: #fed3af; }  /* #BC5215 (orange) */
+    .bg-庚 { background-color: #cecdc3; }  /* #24837B (teal) */
+    .bg-辛 { background-color: #e6e4d9; }  /* #205EA6 (blue) */
+    .bg-壬 { background-color: #c6dde8; }  /* #24837B (teal) */
+    .bg-癸 { background-color: #e1d9e9; }  /* #5E409D (violet) */
   </style>
 </head>
 <body>
@@ -743,9 +743,9 @@
             .domain(HEAVENLY_STEMS)
             .range(HEAVENLY_STEMS.map((stem, index) => {
             const colors = [
-                '#AF3029', '#66800B', '#AF3029', '#A02F6F',
-                '#AD8301', '#BC5215', '#24837B', '#205EA6',
-                '#24837B', '#5E409D'
+                '#24837b', '#66800B', '#AF3029', '#A02F6F',
+                '#AD8301', '#BC5215', '#6f6e68', '#cecdc3',
+                '#1f5ea6', '#5E409D'
             ];
             return colors[index];
             }));
@@ -796,9 +796,9 @@
         
         // Create a color scale
         const colors = [
-            '#AF3029', '#66800B', '#AF3029', '#A02F6F',
-            '#AD8301', '#BC5215', '#24837B', '#205EA6',
-            '#24837B', '#5E409D'
+            '#24837b', '#66800B', '#AF3029', '#A02F6F',
+            '#AD8301', '#BC5215', '#6f6e68', '#cecdc3',
+            '#1f5ea6', '#5E409D'
         ];
         const stemIndex = HEAVENLY_STEMS.indexOf(gan);
         
