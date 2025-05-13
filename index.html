@@ -273,6 +273,33 @@
       font-size: 0.7rem;
       margin-top: 5px;
     }
+
+    .transposed-chart {
+        font-family: sans-serif;
+        border-collapse: collapse;
+        margin-top: 1em;
+    }
+    .transposed-chart th,
+    .transposed-chart td {
+        border: 1px solid #ccc;
+        padding: 8px 12px;
+        text-align: center;
+    }
+    .transposed-chart th {
+        background-color: #f0f0f0;
+    }
+
+    /* Flexoki-based light background colors for 天干 */
+    .bg-甲 { background-color: #f4d3d1; }  /* #AF3029 (red) light */
+    .bg-乙 { background-color: #e4eccb; }  /* #66800B (green) light */
+    .bg-丙 { background-color: #f4d3d1; }  /* #AF3029 (red) */
+    .bg-丁 { background-color: #f4d1e6; }  /* #A02F6F (pinkish purple) */
+    .bg-戊 { background-color: #f7ebc8; }  /* #AD8301 (earth yellow) */
+    .bg-己 { background-color: #f8dcbc; }  /* #BC5215 (orange) */
+    .bg-庚 { background-color: #cceae7; }  /* #24837B (teal) */
+    .bg-辛 { background-color: #cbdff5; }  /* #205EA6 (blue) */
+    .bg-壬 { background-color: #cceae7; }  /* #24837B (teal) */
+    .bg-癸 { background-color: #ddd4f4; }  /* #5E409D (violet) */
   </style>
 </head>
 <body>
@@ -391,86 +418,68 @@
     
     <div class="reference-chart">
       <h2>藏干表</h2>
-      <table>
+      <table class="transposed-chart">
         <thead>
           <tr>
-            <th>地支</th>
-            <th>本气</th>
-            <th>中气</th>
-            <th>余气</th>
+            <th>藏干</th>
+            <th>子</th>
+            <th>丑</th>
+            <th>寅</th>
+            <th>卯</th>
+            <th>辰</th>
+            <th>巳</th>
+            <th>午</th>
+            <th>未</th>
+            <th>申</th>
+            <th>酉</th>
+            <th>戌</th>
+            <th>亥</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>子</td>
-            <td>癸</td>
+            <th>本气</th>
+            <td class="bg-癸">癸</td>
+            <td class="bg-己">己</td>
+            <td class="bg-甲">甲</td>
+            <td class="bg-乙">乙</td>
+            <td class="bg-戊">戊</td>
+            <td class="bg-丙">丙</td>
+            <td class="bg-丁">丁</td>
+            <td class="bg-己">己</td>
+            <td class="bg-庚">庚</td>
+            <td class="bg-辛">辛</td>
+            <td class="bg-戊">戊</td>
+            <td class="bg-壬">壬</td>
+          </tr>
+          <tr>
+            <th>中气</th>
             <td>-</td>
+            <td class="bg-癸">癸</td>
+            <td class="bg-丙">丙</td>
             <td>-</td>
-          </tr>
-          <tr>
-            <td>丑</td>
-            <td>己</td>
-            <td>癸</td>
-            <td>辛</td>
-          </tr>
-          <tr>
-            <td>寅</td>
-            <td>甲</td>
-            <td>丙</td>
-            <td>戊</td>
-          </tr>
-          <tr>
-            <td>卯 (Mao - Rabbit)</td>
-            <td>乙 (Yi - Wood Yin)</td>
+            <td class="bg-乙">乙</td>
+            <td class="bg-庚">庚</td>
+            <td class="bg-己">己</td>
+            <td class="bg-丁">丁</td>
+            <td class="bg-壬">壬</td>
             <td>-</td>
+            <td class="bg-辛">辛</td>
+            <td class="bg-甲">甲</td>
+          </tr>
+          <tr>
+            <th>余气</th>
             <td>-</td>
-          </tr>
-          <tr>
-            <td>辰 (Chen - Dragon)</td>
-            <td>戊 (Wu - Earth Yang)</td>
-            <td>乙 (Yi - Wood Yin)</td>
-            <td>癸 (Gui - Water Yin)</td>
-          </tr>
-          <tr>
-            <td>巳 (Si - Snake)</td>
-            <td>丙 (Bing - Fire Yang)</td>
-            <td>庚 (Geng - Metal Yang)</td>
-            <td>戊 (Wu - Earth Yang)</td>
-          </tr>
-          <tr>
-            <td>午 (Wu - Horse)</td>
-            <td>丁 (Ding - Fire Yin)</td>
-            <td>己 (Ji - Earth Yin)</td>
+            <td class="bg-辛">辛</td>
+            <td class="bg-戊">戊</td>
             <td>-</td>
-          </tr>
-          <tr>
-            <td>未 (Wei - Sheep)</td>
-            <td>己 (Ji - Earth Yin)</td>
-            <td>丁 (Ding - Fire Yin)</td>
-            <td>乙 (Yi - Wood Yin)</td>
-          </tr>
-          <tr>
-            <td>申 (Shen - Monkey)</td>
-            <td>庚 (Geng - Metal Yang)</td>
-            <td>壬 (Ren - Water Yang)</td>
-            <td>戊 (Wu - Earth Yang)</td>
-          </tr>
-          <tr>
-            <td>酉 (You - Rooster)</td>
-            <td>辛 (Xin - Metal Yin)</td>
+            <td class="bg-癸">癸</td>
+            <td class="bg-戊">戊</td>
             <td>-</td>
+            <td class="bg-乙">乙</td>
+            <td class="bg-戊">戊</td>
             <td>-</td>
-          </tr>
-          <tr>
-            <td>戌 (Xu - Dog)</td>
-            <td>戊 (Wu - Earth Yang)</td>
-            <td>辛 (Xin - Metal Yin)</td>
-            <td>丁 (Ding - Fire Yin)</td>
-          </tr>
-          <tr>
-            <td>亥 (Hai - Pig)</td>
-            <td>壬 (Ren - Water Yang)</td>
-            <td>甲 (Jia - Wood Yang)</td>
+            <td class="bg-丁">丁</td>
             <td>-</td>
           </tr>
         </tbody>
